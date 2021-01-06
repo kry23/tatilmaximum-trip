@@ -236,7 +236,6 @@ main {
 .li-item-5 {
   display: grid;
   grid-template-columns: 220px 220px;
-  margin: auto;
 }
 
 .li-item-5-sub {
@@ -275,12 +274,7 @@ STATS */
   margin: 0 auto;
   width: 60%;
 }
-.flexer {
-  display: flex !important;
-  flex-direction: column !important;
 
-  justify-content: s;
-}
 /* 
 -_---------FOOTER--------------- */
 
@@ -428,22 +422,6 @@ STATS */
     margin-right: 97px;
   }
 }
-@media only screen and (max-width: 1200px) {
-  .searchbar-item1 {
-    width: 100%;
-  }
-  .searchbar-item2 {
-    width: 100%;
-  }
-
-  .searchbar-list {
-    display: flex;
-    justify-content: space-between;
-  }
-  .li-item-5 {
-    display: none;
-  }
-}
 
 @media only screen and (max-width: 1060px) {
   .searchbar-list {
@@ -454,11 +432,7 @@ STATS */
       "searchbar-item2 searchbar-item3 searchbar-item4"
       "li-item-5 li-item-5 li-item-5";
   }
-  .searchbar-item3 .dropdown {
-    width: 100% !important;
-  }
-  .flexer {
-  }
+
   .horizontal-width {
     width: 880px !important;
     margin: 0 auto;
@@ -476,9 +450,6 @@ STATS */
     grid-area: searchbar-item2;
     width: 375px;
     height: 68px;
-  }
-  .searchbar-item2 .date-input-container {
-    margin-top: -19px !important;
   }
   .searchbar-item3 {
     grid-area: searchbar-item3;
@@ -763,33 +734,6 @@ SUBSCRİBE */
   right: 1%;
 }
 
-@media only screen and (max-width: 600px) {
-  .main-nav-first .mob {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: left;
-
-    width: 100%;
-  }
-  .flex-me-baby-one-more-time {
-    display: block;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .main-nav-first .mob .mob-item a {
-    display: block;
-    font-size: 20px;
-  }
-  .horizontal-width {
-    width: 103% !important;
-  }
-  .logo {
-    margin-bottom: 0 !important;
-    width: 100%;
-  }
-}
 @media only screen and (max-width: 1000px) {
   .new-scale {
     display: flex;
@@ -947,15 +891,12 @@ SUBSCRİBE */
 }
 
 .searchbar-item2 {
+  position: relative !important;
 }
 .date-input-container {
-  width: 270px;
-  padding: 0px 10px 0px 10px;
-}
-.date-input-container input:hover {
-  cursor: pointer;
-}
-.date-input-container input {
+  position: absolute !important;
+  top: 30px !important;
+  right: 11px !important;
 }
 
 .date-input-container input {
@@ -971,7 +912,7 @@ SUBSCRİBE */
 
 .searchbar-item3 .dropdown .btn {
   color: #333;
-
+  background-color: white;
   border: none;
 }
 .searchbar-item3 .dropdown .btn-secondary {
@@ -993,6 +934,7 @@ SUBSCRİBE */
 } */
 
 .btn:focus {
+  background-color: white !important;
   outline: none !important;
   border-bottom: 5px dodgerblue !important;
   box-shadow: none !important;
