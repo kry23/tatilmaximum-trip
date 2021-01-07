@@ -20,12 +20,16 @@
     <div class="wrapperrr">
         <div class="main-nav">
            <div class="flex-me-baby-one-more-time">
-            <a class="logo" href="#"><img src="./img/logo3.png" alt="" /></a>
-            <div class="main-nav-first">
-                <ul>
-                    <li><a href="#">Oteller</a></li>
-                    <li><a href="#">Uçuşlar</a></li>
-                    <li><a href="#">TatilMaximum Rewards</a></li>
+               <div class="mobile-menu">
+               <div><a class="logo" href="#"><img src="./img/logo3.png" alt="" /></a></div> 
+                <div><a class="ham-menu" href="#"><i class="fas fa-bars"></i></a></div>
+               </div>
+          
+            <div class="main-nav-first showNav">
+                <ul class="mob">
+                    <li class="mob-item"><a href="#">Oteller</a></li>
+                    <li class="mob-item"><a href="#">Uçuşlar</a></li>
+                    <li class="mob-item"><a href="#">TatilMaximum Rewards</a></li>
                 </ul>
             </div>
            </div>
@@ -53,7 +57,7 @@
             <div class="searchbar-container">
                 <ul class="selection-tabs ">
                     <li class="selection-tabs-item1">
-                        <a><i class="fas fa-hotel"></i> Oteller</a>
+                        <a><i class="fas fa-hotel"></i>Oteller</a>
                     </li>
             
                     <li class="selection-tabs-item2">
@@ -65,37 +69,43 @@
                         <h6>Gidilecek Yer/Otel Adı</h6>
                     </li>
                     <li class="searchbar-item2">
-                        <div class="item2-inside">
-                            <div>
-                                <p>Check-in</p>
-                           
-                            </div> 
-                            <div class="night-count">
-                                <span id="diff">1</span><span class="nights"> gece</span>
-                            </div>  
-                            <div class="inside-item-3">
-                                <p>Çıkış</p>
-                            
-                            </div>
-                            <div class="container date-input-container" style="width: 275px !important">
+                        
+                            <div class="flexer">
+                                <div class="item2-inside">
+                                    <div class="">
+                                        <p>Check-in</p>
+                                   
+                                    </div> 
+                                    <div class="night-count">
+                                        <span id="diff">1</span><span class="nights"> gece</span>
+                                    </div>  
+                                    <div class="inside-item-3">
+                                        <p>Çıkış</p>
+                                    
+                                    </div>
+                                </div>
+                            <div class="date-input-container">
                                 <input type="text" id="picker" class="nedir" name="datefilter" value="" />
                               </div>
                         </div>  
                     </li>
+                    <div class="very-explainotry-class-name">
                     <li class="searchbar-item3">
-                        <div class="dropdown" id="drpdwnmenu">
-                            <a class="btn btn-secondary room-guest-icon-locate" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        
+                            <a class=" room-guest-icon-locate" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div class="room-guest-count">
                                     <p>Odalar ve Misafirler</p>
-                                    <div class="align-hs">
-                                        <h6><input class="num-count-up room-num" type="text" id="value1" maxlength="12" value="1"> Oda &nbsp
-                                            <h6><input class="num-count-up room-num1" type="text" id="value3" maxlength="12" value="1">  yetişkin</h6></div>
+                                        <!-- <div class="align-hs">
+                                            <h6><input class="num-count-up room-num" type="text" id="value1" maxlength="12" value="1"> Oda &nbsp
+                                            <h6><input class="num-count-up room-num1" type="text" id="value3" maxlength="12" value="1">  yetişkin</h6>
+                                        </div> -->
                                 </div>
-                                <div class="angle-down-btn"><i class="fa fa-angle-down"></i>
+                                <div class="angle-down-btn">
+                                    <i class="fa fa-angle-down"></i>
                                 </div>
                             </a>
                           
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="drpdwn">
+                            <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="drpdwn">
                               
                                 <a class="dropdown-item flex">
                                  
@@ -103,27 +113,20 @@
                                     
                                     <div class="arrange-btn">
                                         <button class="dropdown-item minus" id="minus1"  type="button"><i class="fas fa-minus"></i> </button>
-                                        <input class="num-count room-num" type="text" id="value1" maxlength="12" value="1">
-                                    <button class="dropdown-item plus" id="plus1" type="button"><i class="fas fa-plus"></i></button>
+                                            <input class="num-count room-num" type="text" id="value1" maxlength="12" value="1">
+                                       <button class="dropdown-item plus" id="plus1" type="button"><i class="fas fa-plus"></i></button>
                                     </div>
-                                    
-                                  
-                                 
                                 </a>
                       
                                 <a class="dropdown-item flex">
-                                 
                                     <p class="rooms-amount">Yetişkinler</p>
-                                    
                                     <div class="arrange-btn">
-                                        <button class="dropdown-item minus" id="minus2"  type="button"><i class="fas fa-minus"></i> </button>
-                                        <input class="num-count room-num1" type="text" id="value2" maxlength="12" value="1">
-                                    <button class="dropdown-item plus" id="plus2" type="button"><i class="fas fa-plus"></i></button>
-                                    </div>
-                                    
-                                  
-                                 
+                                            <button class="dropdown-item minus" id="minus2"  type="button"><i class="fas fa-minus"></i> </button>
+                                                <input class="num-count room-num1" type="text" id="value2" maxlength="12" value="1">
+                                           <button class="dropdown-item plus" id="plus2" type="button"><i class="fas fa-plus"></i></button>
+                                     </div>
                                 </a>
+
                                 <a class="dropdown-item flex">
                                  
                                     <p class="rooms-amount">Çocuklar</p>
@@ -131,20 +134,18 @@
                                     <div class="arrange-btn">
                                         <button class="dropdown-item minus" id="minus3"  type="button"><i class="fas fa-minus"></i> </button>
                                         <input class="num-count room-num2" type="text" id="value3" maxlength="12" value="0">
-                                    <button class="dropdown-item plus" id="plus3" type="button"><i class="fas fa-plus"></i></button>
+                                        <button class="dropdown-item plus" id="plus3" type="button"><i class="fas fa-plus"></i></button>
                                     </div>
-                                 </a>
+                                </a>
                                  <button class="dropdown-item finito-btn" id="btn-finito" type="button">Bitti</button>
-                            </div>
-                          </div>
-                        
-                        
-                        
+                            </div> -->
+                          
                     </li>
                     <li class="searchbar-item4">
                         <i class="fa fa-search"></i>
                     </li>
-                    <li class="li-item-5">
+                </div>
+                      <li class="li-item-5">
                         <div class="li-item-5-sub" id="checkbox1">
                           <input type="checkbox"/>
                         <label for="checkbox1">İş için seyahat ediyorum</label>
@@ -155,7 +156,7 @@
                         <label>Yıldız Derecelendirmesi
                         </label>
                         </div>
-                      </li>
+                      </li>  
                 </ul>
             </div>
         </div>
@@ -213,7 +214,7 @@
     </div>
 
     <section class="recomended-hotels">
-        <div class="container  ">
+        <div class="  ">
         
                 <h3 class="text-secondary text-center md my-3">Önerilen Oteller</h1>
           
@@ -228,7 +229,7 @@
                     <li><a href="#">Moscow</a></li>
                     <li><a href="#">California</a></li>
                     <li><a href="#">Antalya</a></li>
-                    <li><a href="#">Paris</a></li>
+                    
                 </ul>
                     
             
@@ -390,7 +391,7 @@
             function (ev, picker) {
               $(this).val(
                 picker.startDate.format("DD/MM/YYYY") +
-                  "                       " +
+                  "                 " +
                   picker.endDate.format("DD/MM/YYYY")
               );
             }
