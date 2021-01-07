@@ -1190,12 +1190,204 @@ MEDİA QUERİES */
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  body {
-    background-color: dodgerblue;
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-nav-second {
+    width: 100%;
+    height: 100%;
+  }
+  .main-nav-second {
+    font-size: 1rem;
+  }
+
+  .lite a {
+    font-size: 1rem;
+  }
+  .lite2 a {
+    font-size: 1rem;
+  }
+
+  .main-nav-first {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-nav-first ul {
+    flex-direction: row;
+  }
+  .flex-me-baby-one-more-time {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .mobile-menu {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  main {
+    width: 93%;
+  }
+
+  .searchbar-list {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px 8px 12px 12px;
+  }
+  .searchbar-item1 {
+    width: 99%;
+    height: 80px;
+  }
+
+  .searchbar-item2 {
+    width: 99%;
+    height: 80px;
+  }
+  .searchbar-item3 {
+    width: 99%;
+  }
+  .searchbar-item3 {
+    width: 90%;
+    height: 80px;
+  }
+  .searchbar-item4 {
+    width: 9%;
+    height: 80px;
+  }
+  .room-guest-icon-locate {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .room-guest-icon-locate .angle-down-btn {
+    color: #333;
+  }
+  .room-guest-count {
+    display: flex;
+    flex-direction: column;
+  }
+  .room-guest-count p {
+    color: #333;
+  }
+  .very-explainotry-class-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .li-item-5 {
+    margin: 0;
+  }
+  .stats {
+    padding-top: 133px;
+  }
+  .cities {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home-cards {
+    width: 100%;
+    margin-left: 84px;
+  }
+  .mob .mob-item {
+    margin-top: 5px;
+  }
+  .mob .mob-item:hover {
+    cursor: pointer;
+  }
+  .mob .mob-item a {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .mobile-menu {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .banner {
+    width: 122%;
+  }
+  .margin-me {
+    margin-left: 175px;
+  }
+  .stats-grid-3 {
+    width: 100%;
+  }
+  .subscribe-container {
+    margin-left: 31px;
+  }
+  .recomended-hotels {
+    margin-left: 46px;
+    width: 108%;
+  }
+  .mobile {
+    width: 122%;
   }
 }
 @media only screen and (min-width: 1025px) {
-  body {
-    background-color: purple;
+  .searchbar-list {
+    display: grid;
+    grid-template-areas:
+      "item1 item2 item-34"
+      "item5 item5 item5";
+
+    height: 155px;
+    background-color: white;
+    border-right: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    box-shadow: var(--shadow);
+    padding: 30px 0px 0px 71px;
+  }
+  .searchbar-item1 {
+    grid-area: item1;
+    width: 100%;
+    height: 100%;
+  }
+  .searchbar-item2 {
+    grid-area: item2;
+    width: 100%;
+    height: 100%;
+  }
+  .very-explainotry-class-name {
+    grid-area: item-34;
+    display: flex;
+    width: 100%;
+  }
+  .searchbar-item3 {
+    width: 120%;
+    height: 100%;
+  }
+  .room-guest-icon-locate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #333;
+  }
+  .searchbar-item4 {
+    width: 40%;
+    height: 100%;
+  }
+
+  .li-item-5 {
+    grid-area: item5;
+    margin: 0;
+    margin-top: 10px;
+  }
+  .cities {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .home-cards {
+    width: 79%;
   }
 }
