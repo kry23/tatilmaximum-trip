@@ -117,6 +117,22 @@ jQuery(function () {
   });
 });
 
+var navbar = document.querySelector(".main-nav-first");
+var ham = document.querySelector(".ham-menu");
+
+ham.addEventListener("click", toggleHamburger);
+
+function toggleHamburger() {
+  navbar.classList.toggle("showNav");
+  ham.classList("showClose");
+}
+
+var menuLinks = document.querySelector(".mob-item");
+
+menuLinks.forEach(function (menuLink) {
+  menuLink.addEventListener("click", toggleHamburger);
+});
+
 // jQuery(function () {
 //   var j = jQuery;
 
